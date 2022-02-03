@@ -591,3 +591,148 @@ input#id-tagihan:focus{
 
   /* end main content */
 
+/* Update CSS */
+.hoverable:hover {
+  border-color: #4db8c4;
+  transition: border-color .3s ease-out;
+}
+.font-style-total {
+  font-weight: 600;
+}
+#id-tagihan {
+  border: none;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #333333;
+  text-align: end;
+}
+.card-pembayaran-footer {
+  height: max-content;
+}
+.btn-download-qr {
+  border-left: 1px solid #e8e8e8;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0) !important;
+}
+.btn-download-qr:hover {
+  color: white;
+  background: #4db8c4;
+  border: 1px solid #4db8c4;
+}
+.btn-download-qr:hover svg .clip-top,
+.btn-download-qr:hover svg .clip-bottom {
+  fill: #ffffff;
+}
+svg .clip-top,
+svg .clip-bottom {
+  fill: #4db8c4;
+}
+
+.qris-container {
+  display: grid;
+  font-family: "Roboto", sans-serif;
+  width: calc(100% - 58%);
+  padding: 20px 25px;
+  background: url("../img/img-triangle-1.png"), url("../img/img-triangle-2.png");
+  background-position: left 130px, right bottom;
+  background-size: 30%, 160px;
+  background-repeat: no-repeat, no-repeat;
+  border: 1px solid #f2f2f2;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(1, auto);
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "qris-logo qris-logo qris-logo qris-logo qris-logo qris-logo qris-logo qris-logo-gpn qris-logo-gpn qris-logo-gpn"
+    "qris-merchant-title qris-merchant-title qris-merchant-title qris-merchant-title qris-merchant-title qris-merchant-title qris-merchant-title qris-merchant-title qris-merchant-title qris-merchant-title"
+    "qris-area qris-area qris-area qris-area qris-area qris-area qris-area qris-area qris-area qris-area"
+    "qris-footer qris-footer qris-footer qris-footer qris-footer qris-footer qris-footer qris-footer qris-footer qris-footer";
+}
+
+.qris-merchant-title {
+  grid-area: qris-merchant-title;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.qris-merchant-title h3 {
+  color: #1a1818;
+  display: block;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 0.76;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 25px;
+}
+.qris-merchant-title p {
+  color: #1a1818;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  width: 100%;
+  overflow: hidden;
+}
+
+.qris-footer {
+  grid-area: qris-footer;
+  color: #1a1818;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.qris-area {
+  grid-area: qris-area;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: max-content;
+}
+.qris-area img {
+  width: 100%;
+}
+
+.qris-logo-gpn {
+  grid-area: qris-logo-gpn;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 15px;
+  padding-right: 20px;
+}
+.qris-logo-gpn img {
+  width: 50px;
+  height: auto;
+}
+
+.qris-logo {
+  grid-area: qris-logo;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.qris-logo img {
+  width: 100%;
+}

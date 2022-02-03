@@ -60,24 +60,22 @@
                         </div>
                         <div class="card-body">
                             <h3 class="judul">Kurban Berkah Bersama Narobil</h3>
-                            <h6 class="sub-judul">Organisasi <span>Baznas</span></h6>
-                            <hr class="mt-4 mb-3">
-                            <div class="row m-0 justify-content-between">
-                                <p class="id-bayar">Id Bayar</p>
+                            <h6 class="sub-judul mb-4">Organisasi <span>Baznas</span></h6>
+                            <div class="row mx-0 justify-content-between" style="margin-bottom: 16px; max-height: 20px">
+                                <p class="id-bayar m-0 align-self-center">Id Bayar</p>
                                 <div class="copy">
                                   <!-- Target -->
-                                  <input id="id-tagihan" value="897087082258969616" readonly><button class="btn btn-salin" data-clipboard-target="#id-tagihan">
+                                  <input id="id-tagihan" value="897087082258969616" readonly><button class="btn btn-salin pb-0" data-clipboard-target="#id-tagihan">
                                       <img src="assets/img/ic-salin.png" alt="Copy to clipboard">
                                   </button>
                                   <span class="tooltiptext">Salin ID</span>
                               </div>
                             </div>
                             <hr class="mt-0">
-                            <div class="row m-0 justify-content-between">
-                                <p>Tagihan</p>
-                                <p style="color: #333;">Rp 12.000.000</p>
+                            <div class="row mx-0 justify-content-between" style="margin-bottom: 12px;">
+                                <p class="m-0">Tagihan</p>
+                                <p class="m-0" style="color: #333;">Rp 12.000.000</p>
                             </div>
-                            <hr class="mt-0">
                             <div class="row m-0 justify-content-between">
                                 <p>Biaya Admin</p>
                                 <p style="color: #333;">Rp 3.500</p>
@@ -89,11 +87,43 @@
                             </div>
                         </div>
                     </div>
-                    <img class="img-fluid" src="assets/img/scan-qris.png" alt="Scan QRIS">
+                    <div class="qris-container">
+                      <div class="qris-logo">
+                        <img src="assets/img/logo-QRIS.png" />
+                      </div>
+                      <div class="qris-logo-gpn">
+                        <img src="assets/img/logo-GPN.png" />
+                      </div>
+                      <div class="qris-merchant-title">
+                        <h3 class="qris-merchant-title">Merchant name</h3>
+                        <p class="qris-merchant-nmid">NMID: 001200020012</p>
+                      </div>
+                      <div class="qris-area qr-desktop">
+                        <img
+                          src="assets/img/img-sample-qris.jpeg"
+                          class="img-qrcode"
+                        />
+                      </div>
+                      <p class="qris-footer">Dicetak oleh: (Kode NNS)</p>
+                    </div>
                 </div>
                 <!-- end card transfer -->
-                <div class="card card-pembayaran mt-4">
-                    <p class="mb-0">Scan QR Code menggunakan aplikasi yang mendukung metode pembayaran QRIS</p>
+                <div class="card card-pembayaran card-pembayaran-footer flex-row mt-4 p-0 align-items-center justify-content-between">
+                  <p class="mb-0 pl-4">Scan QR Code menggunakan aplikasi yang mendukung metode pembayaran QRIS</p>
+                  <a href="assets/img/img-sample-qris.jpeg" target="_blank" download="" rel="no-follow" class="btn btn-download-qr px-3 py-2">
+                    Download
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <defs>
+                        <clipPath id="2yrsjr918a">
+                          <path data-name="Rectangle 12058" transform="translate(331 354)" style="fill:none" d="M0 0h24v24H0z"></path>
+                        </clipPath>
+                      </defs>
+                      <g data-name="Group 7975" transform="translate(-331 -354)" style="clip-path:url(#2yrsjr918a)">
+                        <path class="clip-top" data-name="Path 25860" d="M10.4 15.726a.8.8 0 0 0 1.2 0l5.174-4.991a.894.894 0 0 0-.644-1.488h-2.961V4.891A.879.879 0 0 0 12.3 4H9.7a.879.879 0 0 0-.867.891v4.356H5.869a.894.894 0 0 0-.644 1.488z" transform="translate(332 354)"></path>
+                        <path class="clip-bottom" data-name="Rectangle 10337" transform="translate(337 372)" d="M0 0h12v2H0z"></path>
+                      </g>
+                    </svg>
+                  </a>
                 </div>
             </div>
           </div>
@@ -106,7 +136,12 @@
     <footer id="footer" style="display: none;" class="position-relative mt-4">
       <div class="container">
         <div class="row m-0 justify-content-between">
-          <p class="mb-0">Copyright © 2020</p>
+          <p class="mb-0">
+            Copyright © 
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </p>
           <p class="mb-0">PT Jatelindo Perkasa Abadi</p>
         </div>
       </div>

@@ -59,7 +59,7 @@
                 <hr class="dotted">
                 <div class="row m-0 justify-content-between">
                   <p class="text-uppercase mb-0">Total Pembayaran</p>
-                  <p class="total-pembayaran mb-0">Rp 12.003.500</p>
+                  <p class="total-pembayaran mb-0 font-style-total">Rp 12.003.500</p>
                 </div>
               </div>
           </div>
@@ -134,7 +134,12 @@
     <footer id="footer" style="display: none;">
       <div class="container">
         <div class="row m-0 justify-content-between">
-          <p class="mb-0">Copyright © 2020</p>
+          <p class="mb-0">
+            Copyright © 
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </p>
           <p class="mb-0">PT Jatelindo Perkasa Abadi</p>
         </div>
       </div>
