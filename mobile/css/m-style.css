@@ -753,13 +753,17 @@ svg .clip-bottom {
   fill: #4db8c4;
 }
 
+.qris {
+  background-color: #ffffff;
+}
+
 .qris-container {
   display: grid;
   font-family: "Roboto", sans-serif;
   width: 100%;
   padding: 20px 25px;
   background: url("../../assets/img/img-triangle-1.png"),
-    url("../../assets/img/img-triangle-2.png");
+    url("../../assets/img/img-triangle-2.png"), #ffffff;
   background-position: left 130px, right bottom;
   background-size: 30%, 160px;
   background-repeat: no-repeat, no-repeat;
@@ -854,4 +858,11 @@ svg .clip-bottom {
 }
 .qris-logo img {
   width: 100%;
+}
+
+@media screen and (max-width: 460px) {
+  .waktu-bayar {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }

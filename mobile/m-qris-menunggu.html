@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1" id="viewport"/>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -36,65 +36,86 @@
           <a class="navbar-brand" href="#"><img src="../assets/img/logo-nav.png" alt="Narobil" height="32px"></a>
       </nav>
       <!-- end navbar -->
-      <div class="row waktu-bayar mt-0 justify-content-between">
-        <p class="mb-0">Selesaikan pembayaran dalam waktu</p>
-        <!-- countdown timer -->
-        <div class="timer"><span id="remainingTime">24 : 00 : 00</span></div>
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="row waktu-bayar mt-0 justify-content-between align-items-center">
+              <p class="mb-0">Selesaikan pembayaran dalam waktu</p>
+              <!-- countdown timer -->
+              <div class="timer"><span id="remainingTime">24 : 00 : 00</span></div>
+            </div>
+            <h3 class="judul mb-2" style="font-size: 16px; font-weight: 600;">Kurban Berkah Bersama Narobil</h3>
+            <div class="row m-0 justify-content-between align-items-center">
+                <h6 class="sub-judul m-0 d-flex">
+                  Organisasi
+                  <span class="d-inline-block ml-1 text-truncate organisasi">Baznas</span>
+                </h6>
+                <a href="#" class="d-inline-block d-md-none" data-toggle="modal" data-target="#modal-detail">Lihat detail</a>
+            </div>
+            <div class="d-none d-md-block">
+              <hr>
+              <div class="row mx-0 justify-content-between" style="margin-bottom: 12px">
+                <p class="m-0 font-style-total-label">TAGIHAN</p>
+                <p class="m-0 text-capitalize" style="color: #333">
+                  Rp 12.000.000
+                </p>
+              </div>
+              <div class="row m-0 justify-content-between">
+                <p class="font-style-total-label">BIAYA ADMIN</p>
+                <p class="text-capitalize" style="color: #333">Rp 3.500</p>
+              </div>
+              <hr class="dotted mt-0">
+            </div>
+            <hr class="d-block d-md-none">
+            <div class="row m-0 justify-content-between">
+                <h6 class="text-uppercase m-0 font-style-total-label" style="font-size: 13px;">Total Pembayaran</h6>
+                <p class="m-0 font-style-total" style="font-weight: 600;">Rp 12.003.500</p>
+            </div>
+            <div class="row d-block d-md-none">
+              <hr class="w-100 my-3" style="border-top: 10px solid #e8e8e8">
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-flex flex-row justify-content-between align-items-center mb-3">
+              <p class="mb-0" style="font-size: 12px; max-width: 60%;">
+                Scan atau download QR Code untuk melakukan pembayaran
+              </p>
+              <a id="download" class="btn btn-default btn-download-qr">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <defs>
+                    <clipPath id="2yrsjr918a">
+                      <path data-name="Rectangle 12058" transform="translate(331 354)" style="fill:none" d="M0 0h24v24H0z"></path>
+                    </clipPath>
+                  </defs>
+                  <g data-name="Group 7975" transform="translate(-331 -354)" style="clip-path:url(#2yrsjr918a)">
+                    <path class="clip-top" data-name="Path 25860" d="M10.4 15.726a.8.8 0 0 0 1.2 0l5.174-4.991a.894.894 0 0 0-.644-1.488h-2.961V4.891A.879.879 0 0 0 12.3 4H9.7a.879.879 0 0 0-.867.891v4.356H5.869a.894.894 0 0 0-.644 1.488z" transform="translate(332 354)"></path>
+                    <path class="clip-bottom" data-name="Rectangle 10337" transform="translate(337 372)" d="M0 0h12v2H0z"></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <div id="download-qris" class="container qris px-0">
+              <div class="qris-container">
+                <div class="qris-logo">
+                  <img src="../assets/img/logo-QRIS.png">
+                </div>
+                <div class="qris-logo-gpn">
+                  <img src="../assets/img/logo-GPN.png">
+                </div>
+                <div class="qris-merchant-title">
+                  <h3 class="qris-merchant-title">Merchant name</h3>
+                  <p class="qris-merchant-nmid">NMID: 001200020012</p>
+                </div>
+                <div class="qris-area qr-mobile">
+                  <img src="../assets/img/img-sample-qris.jpeg" class="img-qrcode">
+                </div>
+                <p class="qris-footer">Dicetak oleh: (Kode NNS)</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="container">
-        <h3 class="judul mb-2" style="font-size: 16px; font-weight: 600;">Kurban Berkah Bersama Narobil</h3>
-        <div class="row m-0 justify-content-between align-items-center">
-            <h6 class="sub-judul m-0 d-flex">
-              Organisasi
-              <span class="d-inline-block ml-1 text-truncate organisasi">Baznas</span>
-            </h6>
-            <a href="#" data-toggle="modal" data-target="#modal-detail">Lihat detail</a>
-        </div>
-        <hr>
-        <div class="row m-0 justify-content-between">
-            <h6 class="text-uppercase m-0 font-style-total-label" style="font-size: 13px;">Total Pembayaran</h6>
-            <p class="m-0 font-style-total" style="font-weight: 600;">Rp 12.003.500</p>
-        </div>
-        <div class="row min-vw-100">
-          <hr class="w-100 my-3" style="border-top: 10px solid #e8e8e8">
-        </div>
-        <div class="d-flex flex-row justify-content-between align-items-center">
-          <p class="mb-0" style="font-size: 12px; max-width: 60%;">
-            Scan atau download QR Code untuk melakukan pembayaran
-          </p>
-          <a href="../assets/img/img-sample-qris.jpeg" target="_blank" download="" rel="no-follow" class="btn btn-default btn-download-qr">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <defs>
-                <clipPath id="2yrsjr918a">
-                  <path data-name="Rectangle 12058" transform="translate(331 354)" style="fill:none" d="M0 0h24v24H0z"></path>
-                </clipPath>
-              </defs>
-              <g data-name="Group 7975" transform="translate(-331 -354)" style="clip-path:url(#2yrsjr918a)">
-                <path class="clip-top" data-name="Path 25860" d="M10.4 15.726a.8.8 0 0 0 1.2 0l5.174-4.991a.894.894 0 0 0-.644-1.488h-2.961V4.891A.879.879 0 0 0 12.3 4H9.7a.879.879 0 0 0-.867.891v4.356H5.869a.894.894 0 0 0-.644 1.488z" transform="translate(332 354)"></path>
-                <path class="clip-bottom" data-name="Rectangle 10337" transform="translate(337 372)" d="M0 0h12v2H0z"></path>
-              </g>
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div class="container qris px-0">
-        <div class="qris-container">
-          <div class="qris-logo">
-            <img src="../assets/img/logo-QRIS.png">
-          </div>
-          <div class="qris-logo-gpn">
-            <img src="../assets/img/logo-GPN.png">
-          </div>
-          <div class="qris-merchant-title">
-            <h3 class="qris-merchant-title">Merchant name</h3>
-            <p class="qris-merchant-nmid">NMID: 001200020012</p>
-          </div>
-          <div class="qris-area qr-mobile">
-            <img src="../assets/img/img-sample-qris.jpeg" class="img-qrcode">
-          </div>
-          <p class="qris-footer">Dicetak oleh: (Kode NNS)</p>
-        </div>
-      </div>
+
       <!-- modal detail pembayaran -->
       <div class="modal fade" id="modal-detail" tabindex="-1" role="dialog" aria-labelledby="modal-detail" aria-hidden="true">
         <div class="modal-dialog">
@@ -129,13 +150,19 @@
     <!--end main content -->
 
     <footer class="position-relative" id="footer" style="display: none;">
-        <p>
-          Copyright © 
-          <script>
-            document.write(new Date().getFullYear());
-          </script> 
-          - Jatelindo Perkasa Abadi
-        </p>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="text-left">
+              Copyright © 
+              <script>
+                document.write(new Date().getFullYear());
+              </script> 
+              - Jatelindo Perkasa Abadi
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- Optional JavaScript -->
@@ -146,61 +173,49 @@
     <script src="../assets/js/script.js"></script>
     <!-- Clipboard -->
     <script src="../plugins/clipboard/js/clipboard.min.js"></script>
-
+    <script src="../assets/js/html2canvas.min.js"></script>
+    <script src="../assets//js/jspdf.debug.js"></script>
     <script>
-  $('.btn-salin').tooltip({
-        trigger: 'click',
-        placement: 'bottom'
-      });
-
-      function setTooltip(message) {
-        $('.btn-salin').tooltip('hide')
-          .attr('data-original-title', message)
-          .tooltip('show');
+      function getRandomString(length) {
+        let randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let result = '';
+        for (let i = 0; i < length; i++) {
+          result += randomChars.charAt(Math.floor(Math.random() * randomChars.length));
+        }
+        return result;
       }
-
-      function hideTooltip() {
-        setTimeout(function() {
-          $('.btn-salin').tooltip('hide');
-        }, 1000);
-      }
-      var clipboard = new ClipboardJS('.btn-salin');
-
-      clipboard.on('success', function(e) {
-        setTooltip('ID bayar disalin!');
-        hideTooltip();
+      document.getElementById("download").addEventListener("click", function() {
+        html2canvas(document.getElementById("download-qris"), {
+          useCORS: true
+        }).then(function (canvas) {
+          let anchorTag = document.createElement("a");
+          document.body.appendChild(anchorTag);
+          anchorTag.download = getRandomString(10);
+          anchorTag.href = canvas.toDataURL();
+          anchorTag.click();
+        });
       });
 
-      clipboard.on('error', function(e) {
-        setTooltip('Gagal!');
-        hideTooltip();
-      });
-
-    //   timer
-    function Timer(duration, display) 
-    {
+      //   timer
+      function Timer(duration, display) {
         var timer = duration, hours, minutes, seconds;
         setInterval(function () {
-            hours = parseInt((timer /3600)%24, 10)
-            minutes = parseInt((timer / 60)%60, 10)
-            seconds = parseInt(timer % 60, 10);
-
-                    hours = hours < 10 ? "0" + hours : hours;
-            minutes = minutes < 10 ? "0" + minutes : minutes;
-            seconds = seconds < 10 ? "0" + seconds : seconds;
-
-            display.text(hours +" : "+minutes + " : " + seconds);
-
-                    --timer;
+          hours = parseInt((timer /3600)%24, 10)
+          minutes = parseInt((timer / 60)%60, 10)
+          seconds = parseInt(timer % 60, 10);
+          hours = hours < 10 ? "0" + hours : hours;
+          minutes = minutes < 10 ? "0" + minutes : minutes;
+          seconds = seconds < 10 ? "0" + seconds : seconds;
+          display.text(hours +" : "+minutes + " : " + seconds);
+          --timer;
         }, 1000);
-    }
+      }
 
-    jQuery(function ($) 
-    {
+      jQuery(function ($) {
         var twentyFourHours = 24 * 60 * 60;
         var display = $('#remainingTime');
         Timer(twentyFourHours, display);
-    });
+      });
     </script>
   </body>
 </html>
